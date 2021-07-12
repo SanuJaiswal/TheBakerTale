@@ -2,22 +2,39 @@
     margin: 0;
     padding: 0;
 }
-
+/*headsection*/
+.headsection{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-image: url("img/bg1.png");
+    background-repeat: no-repeat;
+    
+}
 /* Styling Navbar */
-#navbarNav .navbar-brand{
-    color: #0f0f0f;
+.navigation{
+
+}
+.logo{
+    margin-left: 65px;
+    margin-right: 260px;
 }
 
 /* Styling Header */
-.row{
-    background-image: url("img/bg1.png");
-    background-repeat: repeat-x;
-    background-size: contain;
+.headtext{
+
+}
+.featurette{
+   
 }
 
-.row .featurette-heading{
+.featurette-heading{
     color: #9C0645;
+    
+    font-size: 40px;
+    font-weight: 700;
 }
+
 
 .button{
     display: inline-block;
@@ -57,4 +74,4 @@
 .button:hover span:after{
     opacity: 1;
     right: 0;
-}
+} 
