@@ -1,32 +1,35 @@
-*{
+html{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 /*headsection*/
 .headsection{
     width: 100%;
-    height: auto;
+    height: 810px;
     margin: 0;
     background-image: url("img/bg1.png");
     background-repeat: no-repeat;
     
 }
 /* Styling Navbar */
-.navigation{
+.navbar-nav{
+    align-self: center !important;
+}
+.nav-item{
+    color: black !important;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav-item:hover{
+  font-weight: 500;
+}
 
-}
-.logo{
-    margin-left: 65px;
-    margin-right: 260px;
-}
 
 /* Styling Header */
-.headtext{
 
-}
-.featurette{
-   
-}
 
 .featurette-heading{
     color: #9C0645;
@@ -45,10 +48,11 @@
     text-align: center;
     font-size: 10px;
     padding: 10px;
-    width: 100px;
+    width: 195px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
+    
 }
   
 .button span {
