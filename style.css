@@ -27,9 +27,9 @@ body{
    
     position: 0;
     top: 0;
-    padding-top: 10px;
+    padding-top: auto;
     background: #eee;
-   box-shadow: 0 8px 8px -4px lightgray;
+    box-shadow: 0 8px 8px -4px lightgray;
     background-color: #FFECEF;
 }
 .navbar-nav{
@@ -98,7 +98,7 @@ body{
 
 /* Styling About Us Section */
 .about-me{
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
 
 .center-content{
@@ -129,6 +129,7 @@ body{
 .lq{
     position: absolute;
     left: 34vw;
+    
 }
 
 .rq{
@@ -141,6 +142,7 @@ body{
 }
 .left-content{
     flex-basis: 40%;
+    margin-bottom: 40px;
 }
 
 .left-content img{
