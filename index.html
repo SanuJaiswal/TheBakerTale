@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>The Baker's Tale</title>
   </head>
   
   <body>
+
 
     <!-- Header Section -->
     <div class="headsection animate__animated animate__slideInDown animate__slow">
@@ -77,20 +80,91 @@
           <img src="img/about-img.png" alt="We people">
         </div>
         <div class="right-content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non consectetur vel accusamus dicta possimus modi exercitationem eaque maiores culpa veniam, mollitia dignissimos in cumque molestiae natus distinctio libero velit dolorum est quaerat aliquid porro debitis, nostrum eos. Fugiat laborum porro sit nulla, distinctio odit maiores fuga magnam labore numquam quo corporis quam sunt cum omnis, cumque consequuntur officia nam voluptatibus optio consequatur facere quibusdam laboriosam! Voluptatum similique, cum, rem saepe repellat dignissimos error quasi omnis est nobis deserunt itaque vitae?</p>
+          <p>If you’re looking for a cake that’s fresh, delicious, ‘instagrammable’ and easily affordable, then you’re at a right place. We are an e-commerce cake and confectionery company who offer a wide range of choice in cakes and other sweet delicacies. We completely support ‘Vocal for Local’ as we are a platform for home-bakers and small bakeries to sell their sweet treats. We help them grow by delivering you their products at your doorstep with ease. Our partners’ products check maximum food quality standards which are prepared considering all COVID-19 safety protocols in mind. Who would’ve thought of a La La Land for a website for all those who have a sweet tooth? Our vision is to fulfil all your sweet desires EVERY DAY, ANYTIME and ANYWHERE.</p>
         </div>
       </div>
     </div>
 
-        <!--fixed head navigation-->
-        <script>
-          $(document).ready(function () {
+
+    <!-- Product Section -->
+
+    <div class="container">
+      <h2>Flavour Game</h2>
+      <div class="row slider">
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/bf.jpg" alt="">
+            <h3>Blackforest</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/bs.jpg" alt="">
+            <h3>Butterscotch</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fixed head navigation-->
+    <script>
+      $(document).ready(function () {
     
     var menu = $('.navigationbar');
     var origOffsetY = menu.offset().top;
     
     function scroll() {
-        if ($(window).scrollTop() >= origOffsetY) {
+        if ($(window).scrollTop() > origOffsetY) {
             $('.navigationbar').addClass('sticky-top');
            
         } else {
@@ -101,12 +175,49 @@
     
     }
     
-    document.onscroll = scroll;
+     document.onscroll = scroll;
     
     });
         </script>
-        
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script type="text/javascript">
+      
+  $('.slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    });
+		
+  </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
