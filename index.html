@@ -66,20 +66,21 @@
     </div>
 
     <!-- About Us -->
-    <div class="container about-me">
+    <div class="about-me">
       <div class="center-content">
-        <div class="featurette-heading abouthead my-2">About Us</div>
-        <div class="d-flex flex-row bd-highlight  center-content justify-content-center">
+        <h1>About Us</h1>
+        <div class="sub-center-content">
           <i class="lq fa fa-quote-left" aria-hidden="true"></i>
-          <p class="quote">It's not wise to violate rules<br>until you know how to observe<br>them</p>
+          <p>It's not wise to violate rules<br>until you know how to observe<br>them</p>
           <i class="rq fa fa-quote-right" aria-hidden="true"></i>
         </div>
       </div>
-      <div class="container-fluid  my-2 aboutmaincontent">
-        <img  src="img/about-img.png" width="500px" alt="company images"/>
-        <div class="container aboutus">
-          <h2>We Are The Baker's Tale</h2>
-          <p class="text-wrap">If you’re looking for a cake that’s fresh, delicious, ‘instagrammable’ and easily affordable, then you’re at a right place. We are an e-commerce cake and confectionery company who offer a wide range of choice in cakes and other sweet delicacies. We completely support ‘Vocal for Local’ as we are a platform for home-bakers and small bakeries to sell their sweet treats. We help them grow by delivering you their products at your doorstep with ease. Our partners’ products check maximum food quality standards which are prepared considering all COVID-19 safety protocols in mind. Who would’ve thought of a La La Land for a website for all those who have a sweet tooth? Our vision is to fulfil all your sweet desires EVERY DAY, ANYTIME and ANYWHERE.</p>
+      <div class="container">
+        <div class="left-content">
+          <img src="img/about-img.png" alt="We people">
+        </div>
+        <div class="right-content">
+          <p>If you’re looking for a cake that’s fresh, delicious, ‘instagrammable’ and easily affordable, then you’re at a right place. We are an e-commerce cake and confectionery company who offer a wide range of choice in cakes and other sweet delicacies. We completely support ‘Vocal for Local’ as we are a platform for home-bakers and small bakeries to sell their sweet treats. We help them grow by delivering you their products at your doorstep with ease. Our partners’ products check maximum food quality standards which are prepared considering all COVID-19 safety protocols in mind. Who would’ve thought of a La La Land for a website for all those who have a sweet tooth? Our vision is to fulfil all your sweet desires EVERY DAY, ANYTIME and ANYWHERE.</p>
         </div>
       </div>
     </div>
@@ -158,20 +159,25 @@
     <!--fixed head navigation-->
     <script>
       $(document).ready(function () {
-
-     var menu = $('.navigationbar');
-     var origOffsetY = menu.offset().top;
-
-     function scroll() {
-    if ($(window).scrollTop() >= origOffsetY) {
-        $('.navigationbar').addClass('sticky-top');
-       
+    
+    var menu = $('.navigationbar');
+    var origOffsetY = menu.offset().top;
+    
+    function scroll() {
+        if ($(window).scrollTop() > origOffsetY) {
+            $('.navigationbar').addClass('sticky-top');
+           
+        } else {
+            $('.navigationbar').removeClass('sticky-top');
+            
+        }
+    
+    
     }
     
      document.onscroll = scroll;
     
     });
-
         </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

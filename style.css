@@ -32,6 +32,7 @@ body{
     box-shadow: 0 8px 8px -4px lightgray;
     background-color: #FFECEF;
 }
+
 .navbar-nav{
     align-self: center !important;
 }
@@ -98,7 +99,7 @@ body{
 
 /* Styling About Us Section */
 .about-me{
-    margin-top: 10rem;
+    margin-top: 20rem;
 }
 
 .center-content{
@@ -129,7 +130,6 @@ body{
 .lq{
     position: absolute;
     left: 34vw;
-    
 }
 
 .rq{
@@ -142,7 +142,6 @@ body{
 }
 .left-content{
     flex-basis: 40%;
-    margin-bottom: 40px;
 }
 
 .left-content img{
@@ -150,6 +149,7 @@ body{
 }
 .right-content{
     flex-basis: 50%;
+    margin: 30px;
 }
 
 
