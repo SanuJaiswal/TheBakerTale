@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>The Baker's Tale</title>
   </head>
   
   <body>
+
 
     <!-- Header Section -->
     <div class="headsection animate__animated animate__slideInDown animate__slow">
@@ -82,6 +85,77 @@
       </div>
     </div>
 
+
+    <!-- Product Section -->
+
+    <div class="container">
+      <h2>Flavour Game</h2>
+      <div class="row slider">
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/bf.jpg" alt="">
+            <h3>Blackforest</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/bs.jpg" alt="">
+            <h3>Butterscotch</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="details">
+            <img src="img/cc.jpg" alt="">
+            <h3>Chocochip</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--fixed head navigation-->
     <script>
       $(document).ready(function () {
@@ -105,8 +179,45 @@
     
     });
         </script>
-        
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script type="text/javascript">
+      
+  $('.slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    });
+		
+  </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
