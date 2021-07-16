@@ -154,3 +154,49 @@ body{
 
 
 /* Styling Product Section */
+
+.container h2{
+    font-family: 'Roboto', sans-serif;
+    color:#9C0645;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.details{
+    margin: 20px 0;
+    padding: 30px 20px;
+}
+
+.details h3{
+    font-weight: bold;
+}
+
+.details img{
+    width: 100%;
+}
+.details {
+    text-align: center;
+}
+
+.slider .slick-next:before,.slider .slick-prev:before{
+    font-family: 'fontawesome';
+    font-size: 30px;
+    color: black;
+}
+
+.slider .slick-prev:before{
+    content: '\f104';
+}
+
+.slider .slick-next:before{
+    content: '\f105';
+}
+
+.slider .slick-next, .slider .slick-prev{
+    height:auto;
+    width:auto;
+}
+
+.slider .slick-dots li button:before{
+    font-size: 10px;
+}
