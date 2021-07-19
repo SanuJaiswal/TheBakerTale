@@ -88,7 +88,7 @@
 
     <!-- Product Section -->
 
-    <div class="container">
+    <div class="container product">
       <h2>Flavour Game</h2>
       <div class="row slider">
         <div class="col-md-12">
@@ -156,29 +156,65 @@
         </div>
       </div>
     </div>
+
+    <!-- Contact Us -->
+    <section class="container-fluid contact-me">
+      <h2 class="">Contact Us</h2>
+      <div class="row contact-list">
+        <div class="col-lg-6 list-1">
+          <form action="">
+            <div class="form-group">
+              <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" id="email" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <input type="number" name="number" id="number" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="" cols="10" rows="5" placeholder="Message"></textarea>
+            </div>
+            <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send</button>
+          </form>
+        </div>
+        <div class="col-lg-6 list-2">
+          <div class="sub-list">
+            <div class="heading-list">Our address</div>
+            <div class="sub-heading"><i class="fa fa-map-marker" aria-hidden="true"></i>Bhagalpur,Bihar,India</div>
+          </div>
+          <div class="sub-list">
+            <div class="heading-list">E-mail</div>
+            <div class="sub-heading"><i class="fa fa-envelope" aria-hidden="true"></i>thebakerstale@gmail.com</div>
+          </div>
+          <div class="sub-list">
+            <div class="heading-list">Contact Number</div>
+            <div class="sub-heading"><i class="fa fa-phone" aria-hidden="true"></i>9769254528</div>
+          </div>
+          <div class="sub-list">
+            <div class="heading-list">Social</div>
+            <div class="socials">
+              <a href="http://"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="http://"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/company/thebakerstale" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
     <!--fixed head navigation-->
-    <script>
-      $(document).ready(function () {
     
-    var menu = $('.navigationbar');
-    var origOffsetY = menu.offset().top;
-    
-    function scroll() {
-        if ($(window).scrollTop() > origOffsetY) {
-            $('.navigationbar').addClass('sticky-top');
-           
-        } else {
-            $('.navigationbar').removeClass('sticky-top');
-            
-        }
-    
-    
-    }
-    
-     document.onscroll = scroll;
-    
-    });
-        </script>
+    <script type="text/javascript">
+      var stickyOffset = $('.navigationbar').offset().left;
+      
+      $(window).scroll(function () {
+        var sticky = $('.navigationbar'),
+          scroll = $(window).scrollTop();
+        if (scroll == 0 || scroll<stickyOffset) sticky.removeClass('sticky-top');
+        else sticky.addClass('sticky-top');
+      });
+      
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
