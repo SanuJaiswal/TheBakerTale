@@ -155,7 +155,7 @@ body{
 
 /* Styling Product Section */
 
-.container h2{
+.product h2{
     font-family: 'Roboto', sans-serif;
     color:#9C0645;
     text-align: center;
@@ -199,4 +199,77 @@ body{
 
 .slider .slick-dots li button:before{
     font-size: 10px;
+}
+
+/* Styling Contact Section */
+
+.contact-me{
+    background-image: url("img/bg2.png");
+    background-size: contain;
+}
+
+.contact-me h2{
+    font-family: 'Roboto', sans-serif;
+    color:#9C0645;
+    text-align: center;
+    margin-top: 10rem;
+}
+.contact-list{
+    padding: 7%;
+}
+
+.form-group{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,.form-group textarea{
+    width: 80%;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+button[type="submit"]{
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 20%;
+    border: none;
+    outline:none;
+    padding: 10px;
+    background-color: #E51060;
+    transition: .3s ease color;
+}
+
+button[type="submit"] i{
+    padding-right: 6px;
+}
+button[type="submit"]:hover{
+    color:white;
+}
+
+.heading-list{
+    font-family: 'Roboto', sans-serif;
+    color:#9C0645;
+}
+
+.list-2{
+    text-align: center;
+}
+
+.sub-list{
+    margin-top: 3rem;
+}
+
+.sub-heading i{
+    padding-right: 2%;
+}
+
+.socials a{
+    margin: 10px;
+    color: black;
+}
+
+.socials a:hover{
+    color: burlywood;
 }
