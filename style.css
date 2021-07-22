@@ -5,10 +5,12 @@ html{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    box-sizing: border-box;
+
 }
 
 body{
+    margin: 0%;
+    padding: 0%;
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -24,14 +26,17 @@ body{
 
 /* Styling Navbar */
 .sticky-top{
-   
-    position: 0;
+    position: fixed;
     top: 0;
-    padding-top: auto;
+    left: 0%;
+    right: 0%;
+
+    margin-bottom: auto;
     background: #eee;
-    box-shadow: 0 8px 8px -4px lightgray;
+   /* box-shadow: 0 8px 8px -4px lightgray;*/
     background-color: #FFECEF;
 }
+
 
 .navbar-nav{
     align-self: center !important;
@@ -49,7 +54,12 @@ body{
 
 
 /* Styling Header */
+.featurette{
+    margin-top: 0;
+    padding-top: 10%;
+}
 .featurette-heading{
+
     color: #9C0645;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -155,7 +165,7 @@ body{
 
 /* Styling Product Section */
 
-.container h2{
+.product h2{
     font-family: 'Roboto', sans-serif;
     color:#9C0645;
     text-align: center;
@@ -199,4 +209,77 @@ body{
 
 .slider .slick-dots li button:before{
     font-size: 10px;
+}
+
+/* Styling Contact Section */
+
+.contact-me{
+    background-image: url("img/bg2.png");
+    background-size: contain;
+}
+
+.contact-me h2{
+    font-family: 'Roboto', sans-serif;
+    color:#9C0645;
+    text-align: center;
+    margin-top: 10rem;
+}
+.contact-list{
+    padding: 7%;
+}
+
+.form-group{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,.form-group textarea{
+    width: 80%;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+button[type="submit"]{
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 20%;
+    border: none;
+    outline:none;
+    padding: 10px;
+    background-color: #E51060;
+    transition: .3s ease color;
+}
+
+button[type="submit"] i{
+    padding-right: 6px;
+}
+button[type="submit"]:hover{
+    color:white;
+}
+
+.heading-list{
+    font-family: 'Roboto', sans-serif;
+    color:#9C0645;
+}
+
+.list-2{
+    text-align: center;
+}
+
+.sub-list{
+    margin-top: 3rem;
+}
+
+.sub-heading i{
+    padding-right: 2%;
+}
+
+.socials a{
+    margin: 10px;
+    color: black;
+}
+
+.socials a:hover{
+    color: burlywood;
 }
