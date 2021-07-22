@@ -32,6 +32,7 @@ body{
 #myBtn:hover{
     background-color: #9C0645;
 }
+
 /*headsection*/
 .headsection{
     width: 100%;
@@ -201,7 +202,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.about-me .container{
+.about-me .container-fluid{
     display: flex;
     justify-content: center;
     align-items: center;

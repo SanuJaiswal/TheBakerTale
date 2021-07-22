@@ -1,0 +1,31 @@
+@media (max-width: 992px){
+    .contact-me{
+        background-size: 100vw 170vh;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 970px){
+    .headsection{
+        background-image: url("img/resp.png");
+        background-size: 100vw 175vh;
+    }
+    .side-img .img-fluid{
+        display: none;
+    }
+
+    .headtext{
+        text-align: center;
+    }
+
+    .headtext .lead{
+        color:black;
+    }
+    .product {
+        margin-top: 27rem;
+    }
+
+    .about-me .sub-center-content{
+        display: none;
+    }
+}
