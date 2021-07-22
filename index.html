@@ -18,6 +18,7 @@
   
   <body>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 
     <!-- Header Section -->
     <div class="headsection animate__animated animate__slideInDown animate__slow">
@@ -171,7 +172,7 @@
             <div class="heading-list">Social</div>
             <div class="socials">
               <a href="http://"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="https://www.instagram.com/thebakerstale.official/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/thebakerstaleofficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
               <a href="https://www.linkedin.com/company/thebakerstale" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
           </div>
@@ -229,6 +230,25 @@
     ]
     });
 		
+  </script>
+
+<script>
+  var mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
   </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
