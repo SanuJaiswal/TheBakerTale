@@ -9,6 +9,7 @@ html{
 }
 
 body{
+
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -42,16 +43,11 @@ body{
 }
 
 /* Styling Navbar */
-.sticky-top{
-   
-    position: 0;
-    top: 0;
-    padding-top: auto;
-    background: #eee;
-    box-shadow: 0 8px 8px -4px lightgray;
-    background-color: #FFECEF;
-}
 
+.fixed-top{
+    background-color: #FFECEF;
+   /* box-shadow: 0 8px 8px -4px lightgray;*/
+}
 .navbar-nav{
     align-self: center !important;
 }
@@ -244,8 +240,8 @@ body{
 /* Styling Contact Section */
 .contact-me{
     background-image: url("img/bg2.png");
-    background-size: contain;
-    background-repeat: repeat-x;
+    background-size: cover;
+
     margin-top: 5rem;
 }
 
