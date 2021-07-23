@@ -11,6 +11,7 @@ html{
 body{
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
 }
 
 /* button to top */
@@ -43,13 +44,11 @@ body{
 }
 
 /* Styling Navbar */
-.sticky-top{
+.fixed-top{
    
-    position: 0;
-    top: 0;
-    padding-top: auto;
+  
     background: #eee;
-    box-shadow: 0 8px 8px -4px lightgray;
+    
     background-color: #FFECEF;
 }
 
@@ -76,6 +75,9 @@ body{
 
 
 /* Styling Header */
+.featurette{
+    padding-top: 15vh;
+}
 .featurette-heading{
     color: #9C0645;
     font-family: 'Roboto', sans-serif;
@@ -133,7 +135,7 @@ body{
 
 /* Styling Product Section */
 .product{
-    margin: 330px auto 0;
+    margin:auto auto 0;
 }
 
 .product h2{
