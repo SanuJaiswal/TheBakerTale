@@ -22,8 +22,8 @@
 
 @media (max-width: 975px){
     .headsection{
-        background-image: url("img/resp.png");
-        background-size: 110vh;
+        background-image: url("img/resp.jpg");
+        background-size: cover;
         background-attachment: fixed;
     }
     .side-img .img-fluid{
