@@ -3,9 +3,13 @@
         background-size: 100vw 170vh;
         background-repeat: no-repeat;
     }
+
+    .contact-list{
+        text-align: center;
+    }
 }
 
-@media (max-width: 970px){
+@media (max-width: 975px){
     .headsection{
         background-image: url("img/resp.png");
         background-size: 100vw 175vh;
@@ -14,6 +18,13 @@
         display: none;
     }
 
+    .featurette{
+        margin-top: 6rem;
+    }
+
+    .col-md-6 {
+        width: 90%;
+    }
     .headtext{
         text-align: center;
     }
@@ -21,11 +32,51 @@
     .headtext .lead{
         color:black;
     }
-    .product {
-        margin-top: 27rem;
-    }
 
     .about-me .sub-center-content{
         display: none;
+    }
+
+}
+
+@media (max-width: 700px) and (min-width:600px){
+    .left-content img {
+        width: 90%;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 599px){
+
+    .about-me{
+        text-align: center;
+    }
+
+    .left-content img {
+        width: 90%;
+    }
+
+    .left-content{
+        flex-basis: 90%;
+    }
+
+    .right-content {
+        flex-basis: 100%;
+    } 
+
+    .right-container{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 430px){
+    .product{
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 370px){
+    .featurette-heading{
+        font-size: 30px;
     }
 }
